@@ -22,4 +22,12 @@ describe("FizzBuzz", function () {
     expect(fizzBuzz(0,6)).toEqual([0,1,2,"Fizz",4, "Buzz","Fizz"]);
   });
 
+  it("should return Buzz if (mod 5) equals zero", function(){
+    expect(fizzBuzz(10,11)).toEqual(["Buzz", 11]);
+  });
+
+  it("should return FizzBuzz if number divisible by both 3 and 5", function(){
+    expect(fizzBuzz(0,17)).toEqual([0,1,2,"Fizz",4, "Buzz","Fizz", 7,8,"Fizz","Buzz",11,"Fizz",13,14,"FizzBuzz",16,17]);
+  });
+
 });
