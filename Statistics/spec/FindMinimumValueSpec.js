@@ -1,5 +1,4 @@
-var findMinimumValue = require("../src/Statistics.js")
-var findMaximumValue = require("../src/Statistics.js")
+var findMinimumValue = require("../src/FindMinimumValue.js")
 
 describe("FindMinimumValue", function () {
 
@@ -18,12 +17,4 @@ describe("FindMinimumValue", function () {
 	it ("should return -7 when given [3,18,-7,9]", function () {
 		expect(findMinimumValue([3,18,-7,9])).toEqual(-7);
 	});
-});
-
-describe("FindMaximumValue", function () {
-
-	it("should return 5 when given 5", function () {
-		expect(findMaximumValue([5])).toEqual(5);
-	});
-
 });
