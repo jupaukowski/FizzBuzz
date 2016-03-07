@@ -1,4 +1,4 @@
-var findMaximumValue = require("../src/Statistics.js")
+var findMaximumValue = require("../src/FindMaximumValue.js")
 
 describe("FindMaximumValue", function () {
 
@@ -15,6 +15,6 @@ describe("FindMaximumValue", function () {
 	});
 
 	it ("should return 18 when given [3,18,-7,9]", function () {
-		expect(FindMaximumValue([3,18,-7,9])).toEqual(18);
+		expect(findMaximumValue([3,18,-7,9])).toEqual(18);
 	});
 });
