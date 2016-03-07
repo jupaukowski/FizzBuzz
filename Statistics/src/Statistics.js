@@ -8,4 +8,5 @@ function findMinimumValue (sequence) {
 	}
 	return minimumValue;
 };
+
 module.exports = findMinimumValue;
