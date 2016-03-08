@@ -22,19 +22,19 @@ describe ("Tennis", function () {
     expect(tennis([2,3],[1,0])).toEqual("Deuce");
   });
 
-  it ("should display 'Player 2 wins!' when the score is 0:40", function () {
-    expect(tennis([0,2],[0,1])).toEqual("Player 2 wins!");
+  it ("should display 'Player 2 wins!' when the score is 0:40 and player 2 wins the ball", function () {
+    expect(tennis([0,3],[0,1])).toEqual("Player 2 wins!");
   });
 
-  it ("should display 'Player 1 wins!' when the score is 40:15", function () {
-    expect(tennis([2,1],[1,0])).toEqual("Player 1 wins!");
+  it ("should display 'Player 1 wins!' when the score is 40:15 and player 1 wins the ball", function () {
+    expect(tennis([3,1],[1,0])).toEqual("Player 1 wins!");
   });
 
-  it ("should display 'Advantage for Player 1!' when the score is 40:30", function () {
-    expect(tennis([2,2],[1,0])).toEqual("Advantage for Player 1!");
+  it ("should display 'Advantage for Player 1!' when the score is 40:40 and player 1 wins the ball", function () {
+    expect(tennis([3,3],[1,0])).toEqual("Advantage for Player 1!");
   });
 
-  it ("should display 'Advantage for Player 2!' when the score is 40:40 and player 2 scores", function () {
+  it ("should display 'Advantage for Player 2!' when the score is 40:40 and player 2 wins the ball", function () {
     expect(tennis([3,3],[0,1])).toEqual("Advantage for Player 2!");
   });
 });

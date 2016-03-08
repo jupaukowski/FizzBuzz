@@ -20,7 +20,7 @@ var tennis = function (oldScore, point) {
   }
 
 
-  if (score[0] >= 3 || score [1] >= 3) {
+  if (score[0] > 3 || score [1] > 3) {
     if ((score[0] - score[1]) >= 2) {
       return "Player 1 wins!";
     } else if (score[0] == score[1]) {
@@ -34,9 +34,13 @@ var tennis = function (oldScore, point) {
     }
   } else {
     if (namePts[0] == namePts[1]) {
-      return namePts[0] + "-All";
+      if (score[0] == 3) {
+        return "Deuce";
+      } else {
+        return namePts[0] + "-All";
+      }
     } else {
-    return namePts[0] + "-" + namePts[1];
+      return namePts[0] + "-" + namePts[1];
     }
   }
 };
